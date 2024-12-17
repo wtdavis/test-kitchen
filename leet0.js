@@ -3,10 +3,14 @@ function reverseNum (num) {
 
     //recursive function to make digits in num ennumerable
     function ennumerable (input) {
+        //if there is only 1 digit, return digit
         if (input % 10 === input ){
         return input}
+            // grab the 1's digit with modulo, then get whats left without it, using division
+        let digit = input % 10
+        let divided = input / 10
 
-        
+
     }
 }
 
