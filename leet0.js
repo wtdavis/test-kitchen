@@ -25,6 +25,8 @@ function reverseNum (num) {
     return finalRes
 }
 
+reverseNum(101)
+
 console.log(`the result of 4 is ${reverseNum(400)}`)
 console.log(`the result of 121 is ${reverseNum(100000000000000000001)}`)
 // console.log(`the result of 123 is ${reverseNum(321)}`)
