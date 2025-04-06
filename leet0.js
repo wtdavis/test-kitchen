@@ -30,6 +30,8 @@ reverseNum(101)
 reverseNum(101)
 reverseNum(101)
 reverseNum(101)
+reverseNum(101)
+
 
 
 console.log(`the result of 4 is ${reverseNum(400)}`)
