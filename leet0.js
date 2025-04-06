@@ -14,16 +14,20 @@ function reverseNum (num) {
        let returnArr = []
        returnArr.push(digit)
        returnArr = returnArr.concat(res)
-       console.log(returnArr)
        return(returnArr)
     }
 
-    return ennumerable(num)
+    let numArr = ennumerable(num);
+    let finalRes = 0
+    for (let i=0;i<numArr.length;i++){
+        finalRes += (numArr.pop() * (10 ** i))
+    }
+    return finalRes
 }
 
-console.log(`the result of 4 is ${reverseNum(4)}`)
-console.log(`the result of 121 is ${reverseNum(121)}`)
-console.log(`the result of 123 is ${reverseNum(321)}`)
-console.log(`the result of 100 is ${reverseNum(100)}`)
+console.log(`the result of 4 is ${reverseNum(400)}`)
+console.log(`the result of 121 is ${reverseNum(100000000000000000001)}`)
+// console.log(`the result of 123 is ${reverseNum(321)}`)
+// console.log(`the result of 100 is ${reverseNum(101)}`)
 
 
